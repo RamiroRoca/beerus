@@ -35,9 +35,9 @@
           <div class="row center-xs">
             <div class="col-xs">
               <nav>
-                <a href="#">Populares</a>
-                <a href="#">Recientes</a>
-                <a href="#">Favoritos</a>
+                <a href="#">Muro</a>
+                <a href="#">Amigos</a>
+                <a href="#">Búsqueda</a>
               </nav>
             </div>
           </div>
@@ -49,31 +49,31 @@
       <div class="container">
         <div class="row around-xs">
           <div class="thumb col-xs-6 col-sm-4 col-md-3 ">
-            <img src="http://lorempixel.com/470/470/city/1" alt="">
+
           </div>
 
           <div class="thumb col-xs-6 col-sm-4 col-md-3 ">
-            <img src="http://lorempixel.com/470/470/city/2" alt="">
+
           </div>
 
           <div class="thumb col-xs-6 col-sm-4 col-md-3 ">
-            <img src="http://lorempixel.com/470/470/city/3" alt="">
+
           </div>
 
           <div class="thumb col-xs-6 col-sm-4 col-md-3 ">
-            <img src="http://lorempixel.com/470/470/city/4" alt="">
+
           </div>
 
           <div class="thumb col-xs-6 col-sm-4 col-md-3 ">
-            <img src="http://lorempixel.com/470/470/city/5" alt="">
+
           </div>
 
           <div class="thumb col-xs-6 col-sm-4 col-md-3 ">
-            <img src="http://lorempixel.com/470/470/city/6" alt="">
+
           </div>
 
           <div class="thumb col-xs-6 col-sm-4 col-md-3 ">
-            <img src="http://lorempixel.com/470/470/city/7" alt="">
+
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@
           <div class="col-xs-12 col-sm-4">
             <div class="nav">
               <a href="{{ url('home') }}">Inicio</a>
-              <a href="#">Trabajos</a>
+              <a href="#">FaQ</a>
               <a href="#">Terminos y Condiciones</a>
               <a href="#">Contacto</a>
             </div>

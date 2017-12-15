@@ -35,9 +35,9 @@
           <div class="row center-xs">
             <div class="col-xs">
               <nav>
-                <a href="#">Populares</a>
-                <a href="#">Recientes</a>
-                <a href="#">Favoritos</a>
+                <a href="#">Muro</a>
+                <a href="#">Amigos</a>
+                <a href="#">Búsqueda</a>
               </nav>
             </div>
           </div>
@@ -73,7 +73,7 @@
           <div class="col-xs-12 col-sm-4">
             <div class="nav">
               <a href="{{ url('home') }}">Inicio</a>
-              <a href="#">Trabajos</a>
+              <a href="#">FaQ</a>
               <a href="#">Terminos y Condiciones</a>
               <a href="#">Contacto</a>
             </div>
