@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/laravel', 'HomeController@welcome');
+
+Route::get('/login', 'HomeController@login');
+
+Route::get('/register', 'HomeController@register');
