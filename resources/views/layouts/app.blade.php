@@ -13,9 +13,9 @@
 
     <header>
       @if (Auth::check())
-            <li><a href="{{ route('logout') }}"
+            <a href="{{ route('logout') }}"
                 onclick="event.preventDefault();
-                         document.getElementById('logout-form').submit();">logout</a></li>
+                         document.getElementById('logout-form').submit();">logout</a>
           @endif
 
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -26,12 +26,18 @@
           <div class="row middle-xs between-xs">
             <div class="logo col-xs-12 col-sm-4 center-xs start-sm ">
               <img src="{{asset('images/logo.jpg')}}" class="img"alt="" href="">
-              <a href="{{ url('home') }}">BeerUs</a>
+              <a href="{{ url('/') }}">BeerUs</a>
             </div>
             <nav class="menu col-xs-12 col-sm-8 center-xs end-sm">
-              <a href="{{ url('/') }}">Inicio</a>
-              <a href="{{ url('/login') }}">Iniciar Sesion</a>
-              <a href="{{ url('/register') }}">Registrate</a>
+              <a href="{{ url('/') }}">Home</a>
+              @if (Auth::check())
+                    <a href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                                 document.getElementById('logout-form').submit();">Logout</a>
+              @else
+              <a href="{{ url('/login') }}">Login</a>
+              <a href="{{ url('/register') }}">Register</a>
+              @endif
             </nav>
           </div>
         </div>
@@ -60,7 +66,7 @@
         <div class="row middle-xs between-xs">
           <div class="col-xs-12 col-sm-4">
             <div class="nav">
-              <a href="{{ url('home') }}">Inicio</a>
+              <a href="{{ url('/') }}">Inicio</a>
               <a href="#">FaQ</a>
               <a href="#">Terminos y Condiciones</a>
               <a href="#">Contacto</a>
@@ -69,7 +75,7 @@
 
           <div class="logo col-xs-12 col-sm-4 footlogo">
             <img src="{{asset('images/logo.jpg')}}" class="img"alt="">
-            <a href="{{ url('home') }}">BeerUs</a>
+            <a href="{{ url('/') }}">BeerUs</a>
           </div>
         </div>
 		</div>
