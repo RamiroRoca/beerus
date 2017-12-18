@@ -16,6 +16,10 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index');
 
+//Route::get('/admin', function () {return view('admin');});
+
+Route::get('/admin', 'adminController@admin');
+
 // Route::get('/laravel', 'HomeController@welcome');
 //
 Route::get('/login', 'HomeController@login');
